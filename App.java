@@ -1,6 +1,6 @@
 import javax.swing.JFrame;
 
-public class PacManApp {
+public class App {
     public static void main(String[] args) throws Exception {
         int rowCount = 21;
         int columnCount = 19;
@@ -14,10 +14,11 @@ public class PacManApp {
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        PacManGame pacManGame = new PacManGame();
-        frame.add(pacManGame);
+        PacMan pacmanGame = new PacMan();
+        frame.add(pacmanGame);
         frame.pack();
-        pacManGame.requestFocus();
+        pacmanGame.requestFocus();
         frame.setVisible(true);
+
     }
 }
